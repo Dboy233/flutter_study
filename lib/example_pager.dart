@@ -42,6 +42,7 @@ class _ExamplePagerState extends State<ExamplePager> {
     print("组件 => ${context.widget}");
 
     var data = await Navigator.pushNamed(context, "/exampleButton");
+
     if (data != null) {
       setState(() {
         des = data;
